@@ -15,7 +15,7 @@ class Pesquisa:
             '9. Se os seguros de celular oferecessem preços mais acessíveis ou benefícios adicionais, você reconsideraria contratar um seguro para o seu celular?'
         ]
 
-def iniciarPesquisa(self):
+    def iniciarPesquisa(self):
         with open('respostas.csv', 'w', newline='') as file:
             writer = csv.writer(file)
             header = ['Idade', 'Gênero', *self.perguntas, 'Data e Hora']
@@ -28,7 +28,14 @@ def iniciarPesquisa(self):
                 
                 genero = input("Informe seu gênero (1 = Masculino, 2 = Feminino, 3 = Outros/Não responder): ")
                 if genero not in ['1', '2', '3']:
-                    print("Opção de gênero inválida. Tente novamente.")
+   dataHora = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                linha = [idade, genero, *respostas, dataHora]
+                writer.writerow(linha)
+                print("Respostas registradas com sucesso!")
+
+if __name__ == "__main__":
+    pesquisa = Pesquisa()
+    pesquisa.iniciarPesquisa()                    print("Opção de gênero inválida. Tente novamente.")
                     continue
 
                 respostas = []
