@@ -22,5 +22,9 @@ O projeto está funcionando 100% e para desenvolver eu utilizei: Python.
 
 ---
 
-**Desenvolvido por: [Patrick Fortunato](https://github.com/PatrickvFortunato)**
-                  **[Matheus Silva Mendonça](https://github.com/MatheusMendoca).**
+**Desenvolvido por: 
+                  **[Diego Marques da Silva](https://github.com/Diegool97)**
+                  **[Guilherme Moraes Ferreira](https://github.com/guimoraes021)**
+                  **[Luis Guilherme Pereira Pacheco ](https://github.com/Guippacheco)**
+                  **[Matheus Silva Mendonça](https://github.com/MatheusMendoca)**
+                  **[Patrick Fortunato](https://github.com/PatrickvFortunato)**
