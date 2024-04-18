@@ -4,13 +4,7 @@ from datetime import datetime
 class Questionario:
     def __init__(self):
         self.perguntas = [
-            "Informe sua idade (00 para encerrar): ",
-            "Informe seu gênero: ",
-            "Você tem time? (1 - Sim, 2 - Não, 3 - Não sei responder): ",
-            "Você evita usar camisa de time devido à violência entre torcidas? (1 - Sim, 2 - Não, 3 - Não sei responder): ",
-            "Você é a favor de torcida única nos estádios? (1 - Sim, 2 - Não, 3 - Não sei responder): ",
-            "Você foi ao estádio nos últimos 2 anos? (1 - Sim, 2 - Não, 3 - Não sei responder): "
-        ]
+       
     
     def coletar_respostas(self):
         respostas = []
