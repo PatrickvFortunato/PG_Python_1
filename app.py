@@ -14,3 +14,29 @@ class Pesquisa:
             '8. Você já considerou outras formas de proteger seu celular além de um seguro, como capas protetoras ou programas de garantia estendida?',
             '9. Se os seguros de celular oferecessem preços mais acessíveis ou benefícios adicionais, você reconsideraria contratar um seguro para o seu celular?'
         ]
+
+def iniciarPesquisa(self):
+        with open('respostas.csv', 'w', newline='') as file:
+            writer = csv.writer(file)
+            header = ['Idade', 'Gênero', *self.perguntas, 'Data e Hora']
+            writer.writerow(header)
+
+            while True:
+                idade = input("Informe sua idade (00 para encerrar): ")
+                if idade == '00':
+                    break
+                
+                genero = input("Informe seu gênero (1 = Masculino, 2 = Feminino, 3 = Outros/Não responder): ")
+                if genero not in ['1', '2', '3']:
+                    print("Opção de gênero inválida. Tente novamente.")
+                    continue
+
+                respostas = []
+                for pergunta in self.perguntas:
+                    while True:
+                        resposta = input(f"{pergunta} (1 = Sim, 2 = Não, 3 = Não sei responder): ")
+                        if resposta in ['1', '2', '3']:
+                            respostas.append(resposta)
+                            break
+                        else:
+                            print("Resposta inválida. Por favor, responda com 1, 2 ou 3.")
