@@ -21,7 +21,7 @@ O projeto está funcionando 100% e para desenvolver nós utilizamos: Python.
 
 ---
 
-**Desenvolvido por: 
+**Desenvolvido por:**<br><br>
                   **[Diego Marques da Silva](https://github.com/Diegool97)**<br>
                   **[Guilherme Moraes Ferreira](https://github.com/guimoraes021)**<br>
                   **[Luis Guilherme Pereira Pacheco ](https://github.com/Guippacheco)**<br>
