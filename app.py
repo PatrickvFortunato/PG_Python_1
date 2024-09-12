@@ -28,7 +28,14 @@ class Pesquisa:
                 
                 genero = input("Informe seu gênero (1 = Masculino, 2 = Feminino, 3 = Outros/Não responder): ")
                 if genero not in ['1', '2', '3']:
-                    print("Opção de gênero inválida. Tente novamente.")
+   dataHora = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                linha = [idade, genero, *respostas, dataHora]
+                writer.writerow(linha)
+                print("Respostas registradas com sucesso!")
+
+if __name__ == "__main__":
+    pesquisa = Pesquisa()
+    pesquisa.iniciarPesquisa()                    print("Opção de gênero inválida. Tente novamente.")
                     continue
 
                 respostas = []
